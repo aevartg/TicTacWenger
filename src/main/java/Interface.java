@@ -1,6 +1,3 @@
-import java.io.ByteArrayOutputStream;
-import java.io.PrintStream;
-
 public class Interface
 {
   public static void printResult(char winner)
@@ -10,14 +7,17 @@ public class Interface
   }
   public static String gameResult(char winner)
   {
-    if(winner != 'X' || winner != 'O')
+    if(winner == 'X' || winner == 'O')
+    {
+      return "Winner is: " + winner + "!";
+    }
+    else
     {
       return "Draw!";
     }
-    return "";
   }
-  public static void print(String hallo)
+  public static void print(String strengir)
   {
-    System.out.print(hallo);
+    System.out.print(strengir);
   }
 }

@@ -1,6 +1,5 @@
 import org.junit.Test;
 import static org.junit.Assert.*;
-import java.io.ByteArrayOutputStream;
 
 public class TicTacToeTest
 {
@@ -12,6 +11,6 @@ public class TicTacToeTest
     @Test
     public void testGameResult()
     {
-      assertEquals("Draw!", Interface.gameResult('D'));
+      assertEquals("Winner is: X!", Interface.gameResult('X'));
     }
 }
