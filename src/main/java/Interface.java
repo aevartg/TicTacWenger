@@ -1,12 +1,12 @@
 import java.io.*;
 
 public class Interface {
-	public static int getInput(int[][] arr) throws IOException
+	public static int getInput(char[][] arr, String player) throws IOException
 	{
 		BufferedReader in = new BufferedReader(new InputStreamReader(System.in));
 		boolean valid = false;
 		
-		System.out.print("Choose a number between 1 - 9: ");
+		System.out.print(player + ", choose a number between 1 - 9: ");
 		
 		int result = 0;
 		
