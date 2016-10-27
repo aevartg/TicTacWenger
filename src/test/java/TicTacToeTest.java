@@ -8,9 +8,4 @@ public class TicTacToeTest
     {
         assertEquals(1, TicTacToe.testTester());
     }
-    @Test
-    public void testGameResult()
-    {
-      assertEquals("Winner is: X!", Interface.gameResult('X'));
-    }
 }
