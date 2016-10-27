@@ -4,6 +4,6 @@ public class TicTacToe {
 		gameDomain.playGame();
 	}
 	public static int testTester(){
-		return 1;
+		return 0;
 	}
 }

@@ -36,5 +36,11 @@ public class TicTacToeTest
 
 	}
 
+	@Test
+	public void testInitialGameboard(){
+		char [] []compareisonBoard = {{'1','2','3'},{'4','5','6'},{'7','8','9'}};
+		assertEquals (compareisonBoard,Domain.initializeBoard());
+	}
+
 
 }

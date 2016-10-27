@@ -4,8 +4,8 @@ public class Domain{
 
 	public static void playGame()
 	{
-		char activePlayer = 'x';
-		char [][] gameBoard =  new char [3] [3];
+		char activePlayer = 'X';
+		char [][] gameBoard =  initializeBoard();
 		boolean gameOver = false;
 		while(!gameOver)
 		{
@@ -14,10 +14,10 @@ public class Domain{
 		}
 
 	}
-	private static void initializeBoard(char gameBoard){	
-	
+	public static char [] [] initializeBoard(){
+		char [][] gameBoard = {{'1','2','3'},{'4','5','6'},{'7','8','9'}};
+		return gameBoard;
 	}
-
 	public static char checkStatus(char gameBoard[][])
         {
                 for(int i = 0; i < BOARDSIZE; i++)
