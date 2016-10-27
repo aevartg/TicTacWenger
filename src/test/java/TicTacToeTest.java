@@ -6,6 +6,6 @@ public class TicTacToeTest
     @Test
     public void testSomeLibraryMethod()
     {
-        assertEquals(1, TicTacToe.testTester());
+        assertEquals(0, TicTacToe.testTester());
     }
 }
