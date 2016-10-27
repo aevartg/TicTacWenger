@@ -1,6 +1,9 @@
 import java.io.*;
 
-public class Interface {
+public class Interface 
+{
+	public static final int BOARDSIZE = 3;
+
 	public static int getInput(char[][] arr, char player) throws IOException
 	{
 		BufferedReader in = new BufferedReader(new InputStreamReader(System.in));
@@ -41,5 +44,29 @@ public class Interface {
 		}while(!valid);
 		
 		return result;
+	}
+
+  	public static void printBoard(char gameBoard[][])
+  	{
+        for(int i = 0; i < BOARDSIZE; i++)
+        {
+        	for(int j = 0; j < BOARDSIZE; j++)
+        	{
+                System.out.print(gameBoard[i][j] + " ");
+        	}
+        	System.out.print("\n");
+        }
+  	}
+
+  	public static void gameResult(char winner)
+  	{
+    	if(winner == 'X' || winner == 'O')
+    	{
+      		System.out.print("Winner is: " + winner + "!");
+    	}
+    	else
+    	{
+      		System.out.print("Draw!");
+    	}
 	}
 }
