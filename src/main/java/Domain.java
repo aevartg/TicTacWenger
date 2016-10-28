@@ -60,6 +60,12 @@ public class Domain{
                 {
                         return 'D';
                 }
+        }
 
-	}
+        public static char[][] updateBoard(char[][] arr, char player, int number) 
+        {
+                arr[number/3][number%3] = player;
+                
+                return arr;
+        }
 }
