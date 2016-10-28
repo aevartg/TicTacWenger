@@ -44,7 +44,12 @@ public class Domain{
 
         }
 
-
+        public static char[][] updateBoard(char[][] arr, char player, int number) 
+        {
+                arr[number/3][number%3] = player;
+                
+                return arr;
+        }
 
 
 
