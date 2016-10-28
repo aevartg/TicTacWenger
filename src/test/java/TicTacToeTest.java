@@ -6,7 +6,7 @@ public class TicTacToeTest
     @Test
     public void testSomeLibraryMethod()
     {
-        assertEquals(1, TicTacToe.testTester());
+        assertEquals(0, TicTacToe.testTester());
     }
 
     @Test
@@ -27,13 +27,20 @@ public class TicTacToeTest
 	r5 = Domain.checkStatus(gameBoard5);
 	r6 = Domain.checkStatus(gameBoard6);
 
-        assertEquals('N',r1);
+        assertEquals('D',r1);
         assertEquals('X',r2);
         assertEquals('O',r3);
         assertEquals('X',r4);
-        assertEquals('N',r5);
+        assertEquals('D',r5);
         assertEquals('O',r6);
 
+	}
+
+	@Test
+	public void testInitialGameboard()
+	{
+		char [] []compareisonBoard = {{'1','2','3'},{'4','5','6'},{'7','8','9'}};
+		assertEquals (compareisonBoard,Domain.initializeBoard());
 	}
 
 	@Test
@@ -47,8 +54,8 @@ public class TicTacToeTest
     	char[][] gameBoard2 = {{'X','2','O'},{'4','5','X'},{'7','8','9'}};
     	char[][] changedGameBoard2 = {{'X','2','O'},{'4','O','X'},{'7','8','9'}};
 
-    	char[][] r1 = Domain.updateBoard(gameBoard1, x, 6);
-    	char[][] r2 = Domain.updateBoard(gameBoard2, o, 5);
+    	char[][] r1 = Domain.updateBoard(gameBoard1, x, 6-1);
+    	char[][] r2 = Domain.updateBoard(gameBoard2, o, 5-1);
 
     	assertEquals(changedGameBoard1, r1);
     	assertEquals(changedGameBoard2, r2);
