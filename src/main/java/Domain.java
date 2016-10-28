@@ -61,10 +61,15 @@ public class Domain{
                 }
         }
 
-        public static char[][] updateBoard(char[][] arr, char player, int number) 
+        public static char[][] updateBoard(char[][] arr, char player, int number)
         {
                 arr[number/3][number%3] = player;
-                
+
                 return arr;
         }
+
+				public static char switchPlayer(char player)
+				{
+					
+				}
 }
