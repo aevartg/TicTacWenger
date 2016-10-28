@@ -76,7 +76,7 @@ public class Domain{
 					}
 					else
 					{
-						return 'O';
+						return 'X';
 					}
 				}
 }
