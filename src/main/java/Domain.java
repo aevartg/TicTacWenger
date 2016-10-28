@@ -26,6 +26,7 @@ public class Domain{
 			counter ++;
 			activePlayer = switchPlayer(activePlayer);
 		}
+		Interface.printBoard(gameBoard);
 		Interface.gameResult(gameWinner);
 
 	}
