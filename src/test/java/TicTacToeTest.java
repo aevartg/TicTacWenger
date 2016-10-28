@@ -27,11 +27,11 @@ public class TicTacToeTest
 	r5 = Domain.checkStatus(gameBoard5);
 	r6 = Domain.checkStatus(gameBoard6);
 
-        assertEquals('N',r1);
+        assertEquals('D',r1);
         assertEquals('X',r2);
         assertEquals('O',r3);
         assertEquals('X',r4);
-        assertEquals('N',r5);
+        assertEquals('D',r5);
         assertEquals('O',r6);
 
 	}

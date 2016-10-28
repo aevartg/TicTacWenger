@@ -1,17 +1,32 @@
+import java.io.*;
+
 public class Domain{
 
 	public static final int BOARDSIZE = 3;
 
-	public static void playGame()
+	public static void playGame() throws IOException
 	{
 		char activePlayer = 'X';
+		char gameWinner = 'D';
 		char [][] gameBoard =  initializeBoard();
+		int counter = 0;
 		boolean gameOver = false;
 		while(!gameOver)
 		{
-
-			//function calls
+			Interface.printBoard(gameBoard);
+			int input = Interface.getInput(gameBoard,activePlayer);
+                        //updateboard
+			//checkwinner
+			gameWinner = checkStatus(gameBoard);
+			if(gameWinner!='D'){
+				break;
+			}
+			if (counter == 9){
+				break;
+			}
+			counter ++;
 		}
+		Interface.gameResult(gameWinner);
 
 	}
 	public static char [] [] initializeBoard(){
@@ -43,7 +58,7 @@ public class Domain{
                 }
                 else
                 {
-                        return 'N';
+                        return 'D';
                 }
 
 	}
