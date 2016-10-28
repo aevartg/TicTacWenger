@@ -6,7 +6,7 @@ public class TicTacToeTest
     @Test
     public void testSomeLibraryMethod()
     {
-        assertEquals(1, TicTacToe.testTester());
+        assertEquals(0, TicTacToe.testTester());
     }
 
     @Test
@@ -27,13 +27,19 @@ public class TicTacToeTest
 	r5 = Domain.checkStatus(gameBoard5);
 	r6 = Domain.checkStatus(gameBoard6);
 
-        assertEquals('N',r1);
+        assertEquals('D',r1);
         assertEquals('X',r2);
         assertEquals('O',r3);
         assertEquals('X',r4);
-        assertEquals('N',r5);
+        assertEquals('D',r5);
         assertEquals('O',r6);
 
+	}
+
+	@Test
+	public void testInitialGameboard(){
+		char [] []compareisonBoard = {{'1','2','3'},{'4','5','6'},{'7','8','9'}};
+		assertEquals (compareisonBoard,Domain.initializeBoard());
 	}
 
 
