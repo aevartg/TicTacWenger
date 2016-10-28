@@ -15,8 +15,7 @@ public class Domain{
 		{
 			Interface.printBoard(gameBoard);
 			int input = Interface.getInput(gameBoard,activePlayer);
-                        //updateboard
-			//checkwinner
+                        updateBoard(gameBoard,activePlayer,input);
 			gameWinner = checkStatus(gameBoard);
 			if(gameWinner!='D'){
 				break;
