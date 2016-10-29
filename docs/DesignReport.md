@@ -1,0 +1,1 @@
+// Klasarit með upphafshönnnun
