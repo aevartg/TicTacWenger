@@ -61,9 +61,17 @@ public class TicTacToeTest
     	assertEquals(changedGameBoard2, r2);
     }
 
-    @Test
-    public void testSwitchPlayer()
-    {
-      assertEquals('O',Domain.switchPlayer('X'));
-    }
+	@Test
+	public void testSwitchPlayerOne()
+	{
+		assertEquals('O',Domain.switchPlayer('X'));
+	}
+
+	@Test
+	public void testSwitchPlayerTwo()
+	{
+		assertEquals('X',Domain.switchPlayer('O'));
+	}
+
+	
 }
