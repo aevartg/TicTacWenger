@@ -4,6 +4,8 @@ public class Interface
 {
 	public static final int BOARDSIZE = 3;
 
+	// Prompt the user to enter a integer
+	// Returns integer which is compatible for TicTacToe board 
 	public static int getInput(char[][] arr, char player) throws IOException
 	{
 		BufferedReader in = new BufferedReader(new InputStreamReader(System.in));
@@ -17,12 +19,15 @@ public class Interface
 		{
 			try
 			{
+				// Throws exception if input is not a integer
 				result = Integer.parseInt(in.readLine());
 				valid = true;
 
 				if(result <= 9 && result >= 1) 
 				{
 					result = result - 1;
+
+					// Checks whether input position is valid or not
 					if(arr[result/3][result%3] == 'X' || arr[result/3][result%3] == 'O')
 					{
 						System.out.print("This board position is taken! Choose another number between 1 - 9: ");
@@ -46,6 +51,7 @@ public class Interface
 		return result;
 	}
 
+	// Prints out TicTacToe board in console
   	public static void printBoard(char gameBoard[][])
   	{
         for(int i = 0; i < BOARDSIZE; i++)
@@ -58,6 +64,7 @@ public class Interface
         }
   	}
 
+  	// Prints out TicTacToe winner or a draw.
   	public static void gameResult(char winner)
   	{
     	if(winner == 'X' || winner == 'O')
