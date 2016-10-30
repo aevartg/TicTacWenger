@@ -5,7 +5,5 @@ public class TicTacToe {
 		Domain gameDomain = new Domain();
 		gameDomain.playGame();
 	}
-	public static int testTester(){
-		return 0;
-	}
+
 }
