@@ -5,6 +5,8 @@ APP="TicTacWenger"
 #clean and make new version
 ./gradlew clean
 sh ./bin/package
+sh ./bin/documentJar
 
 # copy the file from install to tmp outside of workingdirectory
 cp -r build/install/${APP}/lib/${APP}.jar build/tmp
+cp -Ra build/docs/javadoc docs 
