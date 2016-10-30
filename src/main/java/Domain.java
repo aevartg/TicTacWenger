@@ -4,6 +4,7 @@ public class Domain{
 
 	public static final int BOARDSIZE = 3;
 
+	// implements  the  game tic tiac toe
 	public static void playGame() throws IOException
 	{
 		char activePlayer = 'X';
@@ -30,10 +31,12 @@ public class Domain{
 		Interface.gameResult(gameWinner);
 
 	}
+	// initialize the gameboard and inputs integers int the appropriate location
 	public static char [] [] initializeBoard(){
 		char [][] gameBoard = {{'1','2','3'},{'4','5','6'},{'7','8','9'}};
 		return gameBoard;
 	}
+	// checks the current status on the current gameboard an return winner if any or D if no winner
 	public static char checkStatus(char gameBoard[][])
   {
     for(int i = 0; i < BOARDSIZE; i++)
@@ -62,13 +65,13 @@ public class Domain{
     				return 'D';
     }
   }
-
+  // puts player in specified location on the gameboard and returns the gameboard updated
   public static char[][] updateBoard(char[][] arr, char player, int number)
   {
     arr[number/3][number%3] = player;
     return arr;
   }
-
+	// switch to the player who has the next move
 	public static char switchPlayer(char player)
 	{
 		if(player == 'X')
