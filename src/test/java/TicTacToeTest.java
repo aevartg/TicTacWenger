@@ -20,9 +20,10 @@ public class TicTacToeTest
         char gameBoard5[][] = {{'O','O','X'},{'X','X','O'},{'O','X','X'}};
         char gameBoard6[][] = {{'X','X','3'},{'4','X','6'},{'O','O','O'}};
     	char gameBoard7[][] = {{'X','O','O'},{'O','X','X'},{'7','O','X'}};
-    	char gameBoard8[][] = {{'X','X','O'},{'4','O','X'},{'O','8','9'}};	
+    	char gameBoard8[][] = {{'X','X','O'},{'4','O','X'},{'O','8','9'}};
+	char gameBoard9[][] = {{'X','O','X'},{'X','O','X'},{'O','X','O'}};
 
-        char r1,r2,r3,r4,r5,r6,r7,r8;
+        char r1,r2,r3,r4,r5,r6,r7,r8,r9;
         r1 = Domain.checkStatus(gameBoard);
         r2 = Domain.checkStatus(gameBoard2);
         r3 = Domain.checkStatus(gameBoard3);
@@ -31,6 +32,7 @@ public class TicTacToeTest
         r6 = Domain.checkStatus(gameBoard6);
         r7 = Domain.checkStatus(gameBoard7);
         r8 = Domain.checkStatus(gameBoard8);
+	r9 = Domain.checkStatus(gameBoard9);
 
         assertEquals('D',r1);
         assertEquals('X',r2);
@@ -40,6 +42,7 @@ public class TicTacToeTest
         assertEquals('O',r6);
         assertEquals('X',r7);
         assertEquals('O',r8);
+	assertEquals('D',r9);
 	}
 
 	@Test
