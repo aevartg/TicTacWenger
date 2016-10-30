@@ -2,9 +2,10 @@
 
 APP="TicTacWenger"
 
-#clean and make new version
+#clean and make new version and tests
 ./gradlew clean
 sh ./bin/package
+sh ./bin/unit_test
 
 # make javadoc
 sh ./bin/documentJar
