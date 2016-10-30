@@ -64,11 +64,11 @@ public class Interface
   	{
     	if(winner == 'X' || winner == 'O')
     	{
-      		System.out.print("Winner is: " + winner + "!");
+      		System.out.println("Winner is: " + winner + "!");
     	}
     	else
     	{
-      		System.out.print("Draw!");
+      		System.out.println("Draw!");
     	}
 	}
 }
