@@ -13,7 +13,7 @@
 
 
 ## Get Going. 
-
+ 
 1. Start by opening the linux platform on your computer.
 
 2. Get the project on your computer
