@@ -15,7 +15,5 @@
 ### We designed a class diagram with three classes:
 
   View [class diagram](http://imgur.com/a/d1sg8).  
-  
-![alt tag](14858660_10209725379723215_2011027491_o.png)
 
 
