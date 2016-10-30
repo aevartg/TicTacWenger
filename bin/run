@@ -1,0 +1,5 @@
+#!/bin/bash
+
+sh ./bin/deploy
+
+java -jar build/tmp/TicTacWenger.jar
