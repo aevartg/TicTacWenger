@@ -5,7 +5,12 @@ APP="TicTacWenger"
 #clean and make new version
 ./gradlew clean
 sh ./bin/package
+
+# make javadoc
 sh ./bin/documentJar
+
+# converts markdown reports to html
+sh ./bin/mdToHtml
 
 # copy the file from install to tmp outside of workingdirectory
 cp -r build/install/${APP}/lib/${APP}.jar build/tmp
