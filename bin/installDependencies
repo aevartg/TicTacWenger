@@ -1,0 +1,11 @@
+#!/bin/bash
+
+# Install java on machine
+sudo add-apt-repository ppa:webupd8team/java
+sudo apt-get update
+sudo apt-get install oracle-java8-installer
+
+# Install Gradle on user
+curl -s https://get.sdkman.io | bash
+source "/home/$(whoami)/.sdkman/bin/sdkman-init.sh" 
+sdk install gradle 3.1
