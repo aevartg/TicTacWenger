@@ -7,39 +7,41 @@ public class Domain{
 	// implements  the  game tic tiac toe
 	public static void playGame() throws IOException
 	{
-		char activePlayer = 'X';
-		char gameWinner = 'D';
-		char [][] gameBoard =  initializeBoard();
-		int counter = 0;
-		boolean gameOver = false;
+	    char activePlayer = 'X';
+	    char gameWinner = 'D';
+	    char [][] gameBoard =  initializeBoard();
+	    int counter = 0;
+	    boolean gameOver = false;
 
-		while(!gameOver)
-		{
-			if (counter == 9){
-				break;
-			}
-
-			Interface.printBoard(gameBoard);
-			int input = Interface.getInput(gameBoard,activePlayer);
-                        updateBoard(gameBoard,activePlayer,input);
-			gameWinner = checkStatus(gameBoard);
-
-			if(gameWinner!='D'){
-				break;
-			}
-
-			counter++;
-			activePlayer = switchPlayer(activePlayer);
+	    while(!gameOver)
+	    {
+	        if (counter == 9)
+                {
+		    break;
 		}
+
 		Interface.printBoard(gameBoard);
-		Interface.gameResult(gameWinner);
+		int input = Interface.getInput(gameBoard,activePlayer);
+                updateBoard(gameBoard,activePlayer,input);
+		gameWinner = checkStatus(gameBoard);
+
+		if(gameWinner!='D')
+		{
+			break;
+		}
+
+		counter++;
+		activePlayer = switchPlayer(activePlayer);
+	    }
+	    Interface.printBoard(gameBoard);
+	    Interface.gameResult(gameWinner);
 	}
 
 	// initialize the gameboard and inputs integers int the appropriate location
 	public static char [] [] initializeBoard()
 	{
-		char [][] gameBoard = {{'1','2','3'},{'4','5','6'},{'7','8','9'}};
-		return gameBoard;
+	    char [][] gameBoard = {{'1','2','3'},{'4','5','6'},{'7','8','9'}};
+	    return gameBoard;
 	}
 
 	// checks the current status on the current gameboard an return winner if any or D if no winner
@@ -49,11 +51,11 @@ public class Domain{
 	    {
 	    	if(gameBoard[i][0] == gameBoard[i][1] && gameBoard[i][0] == gameBoard[i][2])
 	      	{
-	      		return gameBoard[i][0];
+	      	    return gameBoard[i][0];
 	      	}
 	      	if(gameBoard[0][i] == gameBoard[1][i] && gameBoard[0][i] == gameBoard[2][i])
 	      	{
-	      		return gameBoard[0][i];
+	      	    return gameBoard[0][i];
 	      	}
 	    }
 
@@ -67,27 +69,27 @@ public class Domain{
 	    }
 	    else
 	    {
-			return 'D';
+		return 'D';
 	    }
   	}
 
   	// puts player in specified location on the gameboard and returns the gameboard updated
   	public static char[][] updateBoard(char[][] arr, char player, int number)
   	{
-    	arr[number/3][number%3] = player;
-    	return arr;
+    	    arr[number/3][number%3] = player;
+    	    return arr;
   	}
-  	
+
 	// switch to the player who has the next move
 	public static char switchPlayer(char player)
 	{
-		if(player == 'X')
-		{
-			return 'O';
-		}
-		else
-		{
-			return 'X';
-		}
+	    if(player == 'X')
+	    {
+         	return 'O';
+	    }
+            else
+	    {
+		return 'X';
+	    }
 	}
 }
