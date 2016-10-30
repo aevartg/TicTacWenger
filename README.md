@@ -2,8 +2,7 @@
 
 [![codecov](https://codecov.io/gh/aevartg/TicTacWenger/branch/master/graph/badge.svg)](https://codecov.io/gh/aevartg/TicTacWenger)
 
-# TicTacWenger
-
+# [TicTacWenger](https://aevartg.github.io/TicTacWenger/)
 
 [Development manual](https://aevartg.github.io/TicTacWenger/reports/DevelopmentManual.html)
 
