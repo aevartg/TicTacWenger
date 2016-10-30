@@ -9,6 +9,7 @@ public class TicTacToeTest
         assertEquals(0, TicTacToe.testTester());
     }
 
+    // Test right result
     @Test
     public void testCheckStatus()
     {
@@ -18,18 +19,18 @@ public class TicTacToeTest
         char gameBoard4[][] = {{'X','X','O'},{'X','O','O'},{'X','O','X'}};
         char gameBoard5[][] = {{'O','O','X'},{'X','X','O'},{'O','X','X'}};
         char gameBoard6[][] = {{'X','X','3'},{'4','X','6'},{'O','O','O'}};
-	char gameBoard7[][] = {{'X','O','O'},{'O','X','X'},{'7','O','X'}};
-	char gameBoard8[][] = {{'X','X','O'},{'4','O','X'},{'O','8','9'}};	
+    	char gameBoard7[][] = {{'X','O','O'},{'O','X','X'},{'7','O','X'}};
+    	char gameBoard8[][] = {{'X','X','O'},{'4','O','X'},{'O','8','9'}};	
 
         char r1,r2,r3,r4,r5,r6,r7,r8;
-	r1 = Domain.checkStatus(gameBoard);
-	r2 = Domain.checkStatus(gameBoard2);
-	r3 = Domain.checkStatus(gameBoard3);
-	r4 = Domain.checkStatus(gameBoard4);
-	r5 = Domain.checkStatus(gameBoard5);
-	r6 = Domain.checkStatus(gameBoard6);
-	r7 = Domain.checkStatus(gameBoard7);
-	r8 = Domain.checkStatus(gameBoard8);
+        r1 = Domain.checkStatus(gameBoard);
+        r2 = Domain.checkStatus(gameBoard2);
+        r3 = Domain.checkStatus(gameBoard3);
+        r4 = Domain.checkStatus(gameBoard4);
+        r5 = Domain.checkStatus(gameBoard5);
+        r6 = Domain.checkStatus(gameBoard6);
+        r7 = Domain.checkStatus(gameBoard7);
+        r8 = Domain.checkStatus(gameBoard8);
 
         assertEquals('D',r1);
         assertEquals('X',r2);
@@ -37,18 +38,18 @@ public class TicTacToeTest
         assertEquals('X',r4);
         assertEquals('D',r5);
         assertEquals('O',r6);
-	assertEquals('X',r7);
-	assertEquals('O',r8);
-
+        assertEquals('X',r7);
+        assertEquals('O',r8);
 	}
 
 	@Test
 	public void testInitialGameboard()
 	{
-		char [] []compareisonBoard = {{'1','2','3'},{'4','5','6'},{'7','8','9'}};
+		char[][] compareisonBoard = {{'1','2','3'},{'4','5','6'},{'7','8','9'}};
 		assertEquals (compareisonBoard,Domain.initializeBoard());
 	}
 
+    // Tests whether updateBoard returns the right double array
 	@Test
     public void testUpdateBoard()
     {
@@ -77,7 +78,5 @@ public class TicTacToeTest
 	public void testSwitchPlayerTwo()
 	{
 		assertEquals('X',Domain.switchPlayer('O'));
-	}
-
-	
+	}	
 }
