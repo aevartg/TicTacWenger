@@ -45,15 +45,15 @@ public class TicTacToeTest
 	assertEquals('D',r9);
 	}
 
-	@Test
-	public void testInitialGameboard()
-	{
-		char[][] compareisonBoard = {{'1','2','3'},{'4','5','6'},{'7','8','9'}};
-		assertEquals (compareisonBoard,Domain.initializeBoard());
-	}
+    @Test
+    public void testInitialGameboard()
+    {
+	char[][] compareisonBoard = {{'1','2','3'},{'4','5','6'},{'7','8','9'}};
+	assertEquals (compareisonBoard,Domain.initializeBoard());
+    }
 
     // Tests whether updateBoard returns the right double array
-	@Test
+    @Test
     public void testUpdateBoard()
     {
     	char x = 'X';
@@ -71,15 +71,15 @@ public class TicTacToeTest
     	assertEquals(changedGameBoard2, r2);
     }
 
-	@Test
-	public void testSwitchPlayerOne()
-	{
-		assertEquals('O',Domain.switchPlayer('X'));
-	}
+    @Test
+    public void testSwitchPlayerOne()
+    {
+	assertEquals('O',Domain.switchPlayer('X'));
+    }
 
-	@Test
-	public void testSwitchPlayerTwo()
-	{
-		assertEquals('X',Domain.switchPlayer('O'));
-	}	
+    @Test
+    public void testSwitchPlayerTwo()
+    {
+	assertEquals('X',Domain.switchPlayer('O'));
+    }
 }
