@@ -2,4 +2,4 @@
 
 sh ./bin/deploy
 
-java -jar tmp/TicTacWenger.jar
+java -jar /tmp/TicTacWenger.jar
