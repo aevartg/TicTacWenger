@@ -12,6 +12,8 @@ sh ./bin/documentJar
 # converts markdown reports to html
 sh ./bin/mdToHtml
 
+[ -d tmp ] || mkdir tmp
+
 # copy the file from install to tmp outside of workingdirectory
-cp -r build/install/${APP}/lib/${APP}.jar build/tmp
+cp -r build/install/${APP}/lib/${APP}.jar tmp
 cp -Ra build/docs/javadoc docs 
