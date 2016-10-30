@@ -12,3 +12,6 @@ sudo apt-get install git-all
 curl -s https://get.sdkman.io | bash
 source "/home/$(whoami)/.sdkman/bin/sdkman-init.sh" 
 sdk install gradle 3.1
+
+# converter for html
+sudo apt-get install pandoc
