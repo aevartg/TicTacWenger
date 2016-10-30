@@ -2,12 +2,14 @@
 
 
 ## Introduction:
-  This manual shows how to set it up and get it to run on
+  This manual explains how to set up TicTacWenger and get it to run on
 a fresh machine.
 
 ## To install and run the project:
 
-* Run the command "`sh ./bin/run`" this command deplyos and runs the project on the linux platform. 
+* Download the program zip file and extract it to your machine, if you prefer you can also clone it to your machine using git.
+* Open a command line client of your choice and make sure that you are in the root of the TicTacWenger folder.
+* Run the command "`sh ./bin/run`". This command deployss and runs the project in your command line client. A runnable jar file is also created in the tmp folder in the root of your operating system. 
 
 
 
