@@ -11,26 +11,22 @@
 <body>
 <h1 id="development-manual">Development manual</h1>
 <h2 id="introduction">Introduction:</h2>
-<p>This manual shows what is necessary and explanations on how to get the project TicTacWenger and how to build on a fresh machine.</p>
-<h2 id="to-be-able-to-build-the-project-tictacwenger-the-following-has-to-be-installed-and-running">To be able to build the project TicTacWenger the following has to be installed and running:</h2>
+<p>This manual is intended for developers so that they will be able to start working productively. Following these instructions will make your machine ready to start commiting code into the repository.</p>
+<h2 id="to-be-able-to-build-and-commit-to-the-project-tictacwenger-the-following-has-to-be-installed-and-running-on-the-machine">To be able to build and commit to the project TicTacWenger the following has to be installed and running on the machine:</h2>
 <ul>
-<li><a href="https://www.java.com/en/download/">Java</a>: Needs to ne installed to build the project</li>
-<li><a href="https://git-scm.com/book/en/v2/Getting-Started-Installing-Git">Git</a>: Is a source control and versioning system. We have a repository on GitHub for the game.</li>
+<li><a href="https://www.java.com/en/download/">Java</a>: Needs to be installed to compile and build the project.</li>
+<li><a href="https://git-scm.com/book/en/v2/Getting-Started-Installing-Git">Git</a>: Is a version control system. The game is hosted in the github repository &quot;<code>https://github.com/aevartg/TicTacWenger</code>&quot;</li>
 <li><a href="https://gradle.org/gradle-download/?_ga=1.199802794.561824733.1477161886">Gradle</a>: Is a build automation system to simplify the build process.</li>
-<li><a href="http://pandoc.org/installing.html">Pandoc</a>: This needs to be installed to convert markdown into html.</li>
+<li><a href="http://pandoc.org/installing.html">Pandoc</a>: This needs to be installed to convert markdown into html for the reports/manuals.</li>
 </ul>
 <h2 id="get-going.">Get Going.</h2>
 <ol style="list-style-type: decimal">
-<li><p>Start by opening the linux platform on your computer.</p></li>
-<li>Get the project on your computer
+<li><p>Start by launching your preferred command line client on your machine.</p></li>
+<li>Clone the repository onto your computer
 <ul>
-<li>Write the command &quot;<code>git clone git@github.com:aevartg/TicTacWenger.git</code>&quot;.</li>
-<li>This command clones the repository on your computer.</li>
+<li>Navigate to your desire location and clone the repository using the command &quot;<code>git clone git@github.com:aevartg/TicTacWenger.git</code>&quot;.</li>
 </ul></li>
-<li>Build the project
-<ul>
-<li>Write the command &quot;<code>sh./bin/deploy</code>&quot; this command cleans, compiles the program, makes a jar file, makes a javadoc and changes markdown to a html file.</li>
-</ul></li>
+<li><p>Now you can start editing the code! You can use the following commands in the root of the repository. <em>sh ./bin/compile compiles all the java code in the repository </em>sh ./bin/unit_test runs all the unit test from the test directory <em>sh ./bin/clean Deletes the executeable jar file for the program if it exists </em>sh ./bin/package Builds the program and creates executable files *sh ./bin/deploy Is the main build script, cleans up the executable jar file , builds the program , runs the unit tests and creates javadoc documentation for the code. It also converts all the markdown reports into html and places the executeable jar file in the /tmp file in the root of the operating system.</p></li>
 </ol>
 </body>
 </html>
