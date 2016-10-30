@@ -1,5 +1,5 @@
 #!/bin/bash
 
-pandoc -s docs/DesignReport.md -o docs/DesignReport.html
-pandoc -s docs/AdministrationManual.md -o docs/AdministrationManual.html
-pandoc -s docs/DevelopmentManual.md -o docs/DevelopmentManual.html
+pandoc -s docs/DesignReport.md -o docs/reports/DesignReport.html
+pandoc -s docs/AdministrationManual.md -o docs/reports/AdministrationManual.html
+pandoc -s docs/DevelopmentManual.md -o docs/reports/DevelopmentManual.html
