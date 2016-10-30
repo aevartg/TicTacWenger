@@ -2,8 +2,7 @@
 
 ## Introduction:
 
-This manual is intended for developers so that they will be able to start working productively. Following these instructions will make your machine ready to start commiting code into the repository. 
-
+This manual is intended for developers so that they will be able to start working productively as soon as possible. Following these instructions will make your machine ready to start commiting code into the repository. 
 ## To be able to build and commit to the project TicTacWenger the following has to be installed and running on the machine:
 
 * [Java](https://www.java.com/en/download/): Needs to be installed to compile and build the project.
@@ -20,10 +19,10 @@ This manual is intended for developers so that they will be able to start workin
 	* Navigate to your desire location and clone the repository using the command "`git clone git@github.com:aevartg/TicTacWenger.git`".
 
 3. Now you can start editing the code! You can use the following commands in the root of the repository.
-	*sh ./bin/compile compiles all the java code in the repository
-	*sh ./bin/unit_test runs all the unit test from the test directory
-	*sh ./bin/clean Deletes the executeable jar file for the program if it exists
-	*sh ./bin/package Builds the program and creates executable files
-	*sh ./bin/deploy  Is the main build script, cleans up the executable jar file , builds the program , runs the unit tests and creates javadoc documentation for the code. It also converts all the markdown reports into html and places the executeable jar file in the /tmp file in the root of the operating system.      
+* "`sh ./bin/compile`" Compiles all the java code in the repository
+* "`sh ./bin/unit_test`" Runs all the unit test from the test directory
+* "`sh ./bin/clean`" Deletes the executeable jar file for the program if it exists
+* "`sh ./bin/package`" Builds the program and creates executable files
+* "`sh ./bin/deploy`"  Is the main build script, cleans up the executable jar file , builds the program , runs the unit tests and creates javadoc documentation for the code. It also converts all the markdown reports into html and places the executeable jar file in the /tmp file in the root of the operating system.      
 
 
